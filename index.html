@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>N64 Parkour</title>
+  <style>
+    html, body { margin: 0; height: 100%; background: #000; overflow: hidden; color: #fff; font-family: "Courier New", monospace; }
+    canvas { display: block; width: 100vw; height: 100vh; image-rendering: pixelated; }
+    #hud { position: fixed; left: 12px; top: 10px; font-size: 20px; font-weight: bold; text-shadow: 2px 2px 0 #000; }
+    #msg { position: fixed; inset: 0; display: none; align-items: center; justify-content: center; text-align: center; font-size: 30px; font-weight: bold; line-height: 1.5; text-shadow: 3px 3px 0 #000; }
+    #help { position: fixed; left: 12px; bottom: 10px; font-size: 13px; text-shadow: 1px 1px 0 #000; }
+  </style>
+</head>
+<body>
+  <div id="game"></div>
+  <div id="hud"></div>
+  <div id="msg"></div>
+  <div id="help">WASD: бег. Пробел: прыжок. Стрелки, Q/E или мышь: камера. R: заново.</div>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
